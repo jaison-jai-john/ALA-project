@@ -1,4 +1,4 @@
-"""Interactive Matrix Editor (tkinter)
+"""Guass Jordan GUI
 
 This app creates two editable matrices:
 - Matrix A: m x n (editable grid)
@@ -68,7 +68,7 @@ class MatrixEditorApp:
             ctrl_frame, from_=1, to=200, textvariable=self.rows_var, width=6
         )
         self.rows_spin.grid(row=0, column=1, padx=(4, 12))
-        
+
         ttk.Label(ctrl_frame, text="Cols (n):").grid(row=0, column=2, sticky="w")
         self.cols_var = tk.IntVar(value=3)
         self.cols_spin = ttk.Spinbox(
